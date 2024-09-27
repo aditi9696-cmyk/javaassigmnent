@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// quest-1
+let score=[2,4,5,6,7,8,9]
+for(let i=0;i<score.length;i++){
+        console.log(score[i])
+}
+
+
+// quest-2
+let _scores = [45, 67, 89, 32, 56, 78, 49, 50, 92, 40, 65];
+
+// Minimum passing score
+ let passingScore = 50;
+    
+let passCount = 0;
+// Loop through the array and count how many students passed
+for (let i = 0; i < _scores.length; i++) {
+        if (_scores[i] >= passingScore) {
+            passCount++;
+        }
+}
+// Display the result
+console.log("Number of students who passed: " + passCount);
+    
+// quest-3// Array of student scores
+let scores = [45, 67, 89, 32, 56, 78, 49, 50, 92, 40, 65];
+
+// Find the highest score using Math.max and the spread operator
+let topperScore = Math.max(...scores);
+
+// Print the topper's score
+console.log("Topper's score: " + topperScore);
+
+// quest-4
+let SAL = [50000, 65000, 45000, 80000, 70000, 60000, 55000];
+
+// Variable to store the grand total of salaries
+let grandTotal = 0;
+
+// Loop through the SAL array and sum up all salaries
+for (let i = 0; i < SAL.length; i++) {
+    grandTotal += SAL[i];
+}
+
+// Print the grand total of all employees' salaries
+console.log("Grand Total of all employee salaries: " + grandTotal);
+
+// quest-5
+let transactions = [
+    [100, 150], // Purchase: 100, Sale: 150 (Profit)
+    [200, 180], // Purchase: 200, Sale: 180 (Loss)
+    [300, 350], // Purchase: 300, Sale: 350 (Profit)
+    [400, 380], // Purchase: 400, Sale: 380 (Loss)
+    [250, 250]  // Purchase: 250, Sale: 250 (No Profit, No Loss)
+];
+
+// Loop through each transaction and check for profit or loss
+for (let i = 0; i < transactions.length; i++) {
+    let purchasePrice = transactions[i][0];
+    let salePrice = transactions[i][1];
+    
+    if (salePrice > purchasePrice) {
+        console.log(`Transaction ${i + 1}: Profit of ${salePrice - purchasePrice}`);
+    } else if (salePrice < purchasePrice) {
+        console.log(`Transaction ${i + 1}: Loss of ${purchasePrice - salePrice}`);
+    } else {
+        console.log(`Transaction ${i + 1}: No Profit, No Loss`);
+    }
+}
+
+// quest-6
+let arr = [10, 20, 30, 40, 50, 60, 70, 80];
+
+// Loop through the array and print only elements at odd locations
+for (let i = 0; i < arr.length; i++) {
+    // Since array index starts at 0, odd locations will have even indexes (0, 2, 4, ...)
+    if (i % 2 === 0) {
+        console.log(`Element at odd location ${i + 1}: ${arr[i]}`);
+    }
+}
+// quest-7
+
+    </script>
+</body>
+</html>
